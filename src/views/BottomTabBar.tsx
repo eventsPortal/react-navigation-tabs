@@ -374,6 +374,7 @@ class TabBarBottom extends React.Component<BottomTabBarProps, State> {
                 position: this.state.keyboard ? 'absolute' : null,
               }
             : null,
+            { position: 'absolute', zIndex: 1}
         ]}
         pointerEvents={
           keyboardHidesTabBar && this.state.keyboard ? 'none' : 'auto'
